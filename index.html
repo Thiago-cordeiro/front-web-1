@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 1</title> 
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <link rel="icon" href="IMG/sec.png">
+</head>
+<body>
+    
+    <nav>
+        <h2><strong style=" color: rgb(238, 17, 183);">S</strong> <strong style=" color: rgb(31, 131, 224);">FALTAS</strong></h2>
+        <div class="nav-dir">
+            <a href="#sobres">Sobre</a>
+            <a href="#cadastrarr">Casdatrar</a>
+            <a href="#Faltass">Faltas</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="esq">
+            <h1><strong style="color:rgb(31, 131, 224)">Marque</strong> as suas <strong style="color:rgb(241, 67, 227)">Faltas</strong></h1>
+            <p>Este site ajudará voce a não ficar perdido durante o semestre</p>
+        </div>
+        <div class="dir">
+            <img src="IMG/ilus.svg" id="img1">
+        </div>        
+    </section>
+
+    <div class="secsobre" id="sobres">
+        <div class="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Bem-vindo ao nosso projeto! Este site foi desenvolvido como parte do trabalho final da disciplina de <strong>Desenvolvimento Web 1</strong> da Universidade Federal do Paraná. O objetivo deste trabalho foi integrar teoria e prática, criando uma aplicação completa que envolve:</p>
+            <ul>
+                <li><strong>Parte Visual (Front-end):</strong> Um design interativo e intuitivo que oferece uma experiência agradável para os usuários.</li>
+                <li><strong>Parte Lógica (Back-end):</strong> A implementação da lógica de programação para realizar operações eficientes no sistema.</li>
+                <li><strong>Armazenamento (Banco de Dados):</strong> Gerenciamento de dados em um banco de dados relacional, garantindo a persistência das informações.</li>
+            </ul>
+            <p>Este site implementa um <strong>CRUD</strong>, que significa <em>Create</em> (Criar), <em>Read</em> (Ler), <em>Update</em> (Atualizar) e <em>Delete</em> (Deletar), que são operações fundamentais para gerenciar dados de maneira eficaz em qualquer sistema.</p>
+            <p>Estamos muito felizes com o resultado e ansiosos para mostrar o impacto que a tecnologia pode ter no processo de ensino e aprendizagem!</p>
+        </div>
+        
+    </div>
+
+
+    <div class="entradas" id="cadastrarr">
+        <div class="form-box">
+            <form class="form" onsubmit="return false;">
+                <span class="title">Cadastre a Matéria</span>
+                <div class="form-container">
+                    <input type="text" class="input" id="materiaCadastro" placeholder="Nome da Matéria">
+                    <input type="text" class="input" id="nomeProfessor" placeholder="Nome do Professor">
+                    <input type="number" class="input" id="numeroSemestre" placeholder="Número do semestre">
+                </div>
+                <button type="button" id="botaoCadastrarMateria">Cadastrar</button>
+            </form>
+        </div>
+        
+        <div class="form-box">
+            <form class="form" onsubmit="return false;">
+                <span class="title">Adicionar Falta</span>
+                <div class="form-container">
+                    <input type="text" class="input" id="materiaFalta" placeholder="Nome da Matéria">
+                    <input type="date" class="input" id="diaFalta" placeholder="Dia da Falta">
+                    <input type="number" class="input" id="numeroFaltas" placeholder="Número de Faltas">
+                </div>
+                <button type="button" id="botaoAdicionarFalta">Adicionar Falta(s)</button>
+            </form>
+        </div>
+        
+
+
+    </div>
+
+    <section class="secaoFaltas" id="Faltass">
+        <h3 style="font-size: 50px;">Matérias Cadastradas</h3>
+        <div class="container" id="containerFaltas">
+                <!-- As matérias e faltas aparecerão aqui -->
+        </div>
+    </section>
+
+    <footer>
+        <hr> 
+        <h5>Desenvolvido Por:</h5>
+        <div class="footernomes">
+            <div class="fo">
+                <p>Diego Dasko</p>
+                <a href="www.github.com"><img src="IMG/icons8-github.svg"></a>
+            </div>
+            
+            <div class="fo">
+                <p>Matheus José vulgo espanca xota</p>
+                <a href="www.github.com"><img src="IMG/icons8-github.svg"></a>
+            </div>
+    
+            <div class="fo">
+                <p>Thiago de Lima de Assis Cordeiro</p>
+                <a href="www.github.com"><img src="IMG/icons8-github.svg"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="back.js"></script>
+</body>    

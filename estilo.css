@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0; 
+    color: rgb(240, 243, 247);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
+    background: #0b0c0e;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+}
+nav h2{
+
+    margin-left: 7%;
+}
+a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.nav-dir{
+    width: 250px;
+
+}
+/*======================================  FIM NAVEGAÇãO ======================================*/
+
+
+section{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: space-around;
+}
+.esq{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: center;
+    justify-content: space-around;
+}
+.dir{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#img1{
+    width: 90%;
+}
+
+h1{
+    font-size: 70px;
+    padding-left: 15%;
+}
+
+/*=======================================================================================*/
+
+.entradas {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.form-box {
+    max-width: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);  
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+   
+  }
+  
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+ 
+  .form-container {
+    overflow: hidden;
+    border-radius: 8px;    
+    width: 100%;
+  }
+  
+  .input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: .9rem;
+    padding: 8px 15px;
+   
+  }
+  .input::placeholder {
+    color: #ccc7c7; 
+}
+  
+  .form button {
+    background-color: #1b51a1;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #005ce6;
+  }
+
+/*=======================================================================================*/
+.secaoFaltas{
+    width: 100%;
+    height: 80dvh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+    background: 
+    radial-gradient(circle, rgba(0, 0, 0, 0.192) 70%, rgb(0, 0, 0) 100%),
+    url(IMG/abstract-2501117.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    margin-top: 40px;
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+hr{
+    width: 100%;
+}
+.box {
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);  
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+.box h4{
+    font-size: 20px;
+}
+
+.areeaEscrita{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+
+}
+/*==============================================================================================*/
+  /* Estilizando o botão de editar */
+  .editar-materia {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .editar-materia img {
+    width: 30px;
+    height: 30px;
+}
+
+  .editar-materia:hover {
+    background-color: #45a049; 
+    transform: scale(1.1);
+}
+
+  .editar-materia:active {
+    background-color: #3e8e41;
+  }
+
+/* Estilo para o botão de deletar */
+.deletar-materia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff4d4d;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.deletar-materia:hover {
+    background-color: #ff0000; /* Cor mais forte no hover */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+}
+
+.deletar-materia:focus  {
+    outline: none;
+}
+/*====================================*/
+
+/* Estilos para a seção "Sobre" */
+.secsobre{
+    font-family: 'Arial', sans-serif;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    background: 
+    radial-gradient(circle, rgba(0, 0, 0, 0.418) 70%, rgb(0, 0, 0) 100%),
+    url(IMG/abstract-2501117.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+    
+}
+.sobre {
+    background: transparent; 
+    backdrop-filter: blur(20px);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.sobre h2 {
+    font-size: 2.5em;
+    color: #f4f5f7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #dbd1d1;
+    text-align: justify;
+}
+
+.sobre ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobre ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #dbd1d1;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sobre ul li:before {
+    content: "•"; 
+    color: #67baf1; /* Cor para os pontos de lista */
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+    top: 0;
+}
+
+.sobre strong {
+    color:  #67baf1; /* Destaque para termos importantes */
+}
+
+.sobre em {
+    font-style: italic;
+    color: #e74c3c; /* Cor para termos em itálico */
+}
+
+
+
+/*====================================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footernomes{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.fo{
+    display: flex;
+    flex-direction: column-reverse  ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-dir {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 40px;
+        padding-left: 10%;
+    }
+
+    .esq{
+        width: 100%;
+    }
+    .dir{
+        width: 100%;
+    }
+    #img1{
+        width: 100%;
+    }
+
+    .secsobre{
+        margin-top: 50%;
+    }
+    .entradas {
+        margin-top: 100px;
+        height: 100dvh;
+        flex-direction: column;
+        
+    }
+    .secaoFaltas{
+        margin-top: 100px;
+    }
+    .form-box {
+        width: 90%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 50px;
+        width: 100%;
+        text-align: left;
+    }
+    section{
+        flex-direction: column;
+    }
+    section p{
+        width: 90%;
+        text-align: justify;
+    }
+    .dir{
+        margin-top: 30px;
+    }
+    #img1{
+        width: 80%;
+    }
+    .sobre{
+        margin-top: 0px;
+    }
+    .sobre h2 {
+        font-size: 1.5em;
+    }
+
+    .sobre p {
+        font-size: 0.9em;
+    }
+
+    footer{
+        height: 300px;
+    }
+    .footernomes {
+        flex-direction: column;
+    }
+    .fo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
